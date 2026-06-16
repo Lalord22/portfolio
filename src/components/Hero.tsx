@@ -1,4 +1,6 @@
 export function Hero() {
+  const heroImageUrl = `${import.meta.env.BASE_URL}assets/images/heroImage.jpeg`
+
   return (
     <section id="hero" className="relative mx-auto grid min-h-[74vh] w-full max-w-6xl items-center gap-12 px-6 py-16 sm:py-24 lg:grid-cols-[1.2fr_0.8fr]">
       <div>
@@ -32,7 +34,7 @@ export function Hero() {
         <img
           data-hero-visual
           className="relative aspect-[4/5] w-full rounded-[2rem] border border-textAccent/25 object-cover shadow-card"
-          src="/assets/images/heroImage.jpeg"
+          src={heroImageUrl}
           alt="Portrait for the portfolio hero section"
         />
       </div>
