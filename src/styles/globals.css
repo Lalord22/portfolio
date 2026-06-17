@@ -19,6 +19,18 @@
     @apply box-border;
   }
 
+  main {
+    @apply min-w-0;
+  }
+
+  img,
+  svg,
+  video,
+  canvas {
+    max-width: 100%;
+    height: auto;
+  }
+
   a {
     @apply no-underline;
   }

@@ -112,6 +112,19 @@
 
 ---
 
+## Phase 7: Responsive Hardening (Navbar + Contact CTA)
+
+**Purpose**: Ensure critical nav and contact interactions never overflow container or viewport boundaries.
+
+- [x] T035 [US1] Refactor navbar small-screen layout to wrap/stack safely while preserving desktop composition in `src/components/Navbar.tsx`
+- [x] T036 [US1] Add navbar overflow guards (`max-w-full`, `min-w-0`, spacing constraints) in `src/components/Navbar.tsx` and `src/styles/globals.css`
+- [x] T037 [US1] Update contact email CTA to remain inside card bounds with responsive width/wrapping utilities in `src/components/Contact.tsx`
+- [x] T038 [US1] Validate contact card/container styles for long text resilience in `src/styles/globals.css`
+- [ ] T039 [US1] Manual validation at 320/375/390/414/768/1024/1440 widths for overflow, clipping, and tappable targets (record notes in `specs/001-initial-page-setup/quickstart.md`)
+- [ ] T040 [US1] Regression pass: verify desktop navbar visual hierarchy still matches Figma intent after responsive changes
+
+---
+
 ## Dependencies & Execution Order
 
 ### Phase Dependencies
@@ -134,6 +147,7 @@
 - US1: T010 and T011 can run in parallel
 - US3: T022 and T023 can run in parallel
 - Phase 6: T029 and T030 can run in parallel
+- Phase 7: T035 and T037 can run in parallel
 
 ---
 

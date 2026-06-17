@@ -1,7 +1,7 @@
 export function Contact() {
   return (
-    <section id="contact" data-animate-section className="mx-auto w-full max-w-6xl px-6 pb-24 pt-20 sm:pb-28 sm:pt-24">
-      <div className="rounded-2xl border border-textAccent/30 bg-card/70 px-6 py-8 sm:px-8 sm:py-10">
+    <section id="contact" data-animate-section className="mx-auto w-full max-w-6xl px-4 pb-24 pt-20 sm:px-6 sm:pb-28 sm:pt-24">
+      <div className="min-w-0 rounded-2xl border border-textAccent/30 bg-card/70 px-5 py-8 sm:px-8 sm:py-10">
         <p data-section-label className="font-body text-xs uppercase tracking-[0.24em] text-textAccent">
           Contact
         </p>
@@ -17,7 +17,7 @@ export function Contact() {
 
         <a
           href="mailto:gerardo.salazar.vargas@est.una.ac.cr"
-          className="mt-8 inline-flex rounded-md bg-button px-6 py-3 font-body text-sm font-bold uppercase tracking-[0.14em] text-textPrimary transition hover:brightness-110"
+          className="mt-8 inline-flex w-full max-w-full items-center justify-center rounded-md bg-button px-4 py-3 text-center font-body text-xs font-bold tracking-[0.08em] text-textPrimary break-all transition hover:brightness-110 sm:w-auto sm:px-6 sm:text-sm sm:break-normal"
         >
           gerardo.salazar.vargas@est.una.ac.cr
         </a>

@@ -14,10 +14,12 @@
 ## Manual Validation Checklist
 
 - [ ] Navbar shows Technologies, Projects, Contact, and GitHub links.
+- [ ] Navbar remains fully visible and clickable with no horizontal overflow at 320/375/390/414 widths.
 - [ ] Hero section is visible on first viewport and CTA scrolls to Contact.
 - [ ] Technologies section renders all items without overflow on mobile/desktop.
 - [ ] Projects section renders cards with title, description, tags, GitHub link, and right-edge image.
 - [ ] Contact section is reachable through navbar and hero CTA.
+- [ ] Contact email CTA remains inside the contact card/container and wraps safely on small screens.
 - [ ] Color usage matches design tokens:
   - Background `#00050F`
   - Primary text `#E5F4FF`

@@ -23,11 +23,11 @@ export const initPageAnimations = ({ root, hero, technologies, projects }: Anima
     if (hero.current) {
       gsap
         .timeline({ defaults: { ease: 'power3.out' } })
-        .from('[data-hero-kicker]', { y: 28, autoAlpha: 0, duration: 0.55 })
-        .from('[data-hero-title]', { y: 36, autoAlpha: 0, duration: 0.7 }, '-=0.3')
-        .from('[data-hero-body]', { y: 24, autoAlpha: 0, duration: 0.55 }, '-=0.3')
-        .from('[data-hero-cta]', { y: 20, autoAlpha: 0, duration: 0.45 }, '-=0.25')
-        .from('[data-hero-visual]', { scale: 0.96, autoAlpha: 0, duration: 0.7 }, '-=0.45')
+        .from('[data-hero-kicker]', { y: 28, autoAlpha: 0, duration: 1 })
+        .from('[data-hero-title]', { y: 36, autoAlpha: 0, duration: 0.9 }, '-=0.3')
+        .from('[data-hero-body]', { y: 24, autoAlpha: 0, duration: 0.7 }, '-=0.3')
+        .from('[data-hero-cta]', { y: 20, autoAlpha: 0, duration: 0.6 }, '-=0.25')
+        .from('[data-hero-visual]', { scale: 0.96, autoAlpha: 0, duration: 0.9 }, '-=0.45')
     }
 
     gsap.utils.toArray<HTMLElement>('[data-animate-section]').forEach((section) => {
@@ -65,7 +65,7 @@ export const initPageAnimations = ({ root, hero, technologies, projects }: Anima
       gsap.from('[data-tech-item]', {
         y: 22,
         autoAlpha: 0,
-        duration: 0.45,
+        duration: 0.7,
         stagger: 0.08,
         ease: 'power2.out',
         scrollTrigger: {
@@ -80,7 +80,7 @@ export const initPageAnimations = ({ root, hero, technologies, projects }: Anima
       gsap.from('[data-project-card]', {
         y: 26,
         autoAlpha: 0,
-        duration: 0.48,
+        duration: 0.7,
         stagger: 0.1,
         ease: 'power2.out',
         scrollTrigger: {

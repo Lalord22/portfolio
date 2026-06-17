@@ -184,6 +184,33 @@ This feature will use a small set of reusable motion patterns rather than one-of
 3. Manual review against Figma visual intent and color token accuracy.
 4. Prepare GitHub Pages deployment settings and route/base verification.
 
+### Next Step Plan: Responsive Hardening (Navbar + Contact CTA)
+
+Objective: Close the remaining responsive gaps so no primary interactive element overflows its container or viewport on common device widths.
+
+Scope:
+- Navbar horizontal behavior from 320px up to desktop widths.
+- Contact email CTA sizing/wrapping behavior for long email text.
+
+Implementation actions:
+1. Refactor navbar layout to support wrap/stack behavior at small breakpoints while preserving desktop alignment.
+2. Add width guards (`max-w-full`, `min-w-0`, controlled gap/spacing) to all navbar interactive elements.
+3. Update contact CTA styles so the email button stays within its parent card and viewport using `w-full`, `max-w-full`, and text wrapping/break utilities.
+4. Add explicit overflow protection to container elements (`overflow-x-hidden` only where appropriate, avoid masking real layout bugs).
+5. Run manual viewport pass at 320, 375, 390, 414, 768, 1024, and 1440 widths.
+
+Acceptance checks:
+1. No horizontal scrollbar appears in default browsing state across target widths.
+2. Navbar links remain visible and operable without clipping at 320px width.
+3. Contact email CTA never exceeds the contact card width and remains tappable/readable on small screens.
+4. Desktop presentation remains visually consistent with Figma intent.
+
+Primary file touchpoints:
+- `src/components/Navbar.tsx`
+- `src/components/Contact.tsx`
+- `src/styles/globals.css`
+- `specs/001-initial-page-setup/quickstart.md`
+
 ## Risks and Mitigations
 
 - Risk: GitHub Pages asset paths break due to project-site routing.

@@ -92,6 +92,8 @@ As a visitor, I can browse a list of project cards where each card represents on
 - **FR-013**: Project cards MUST render with an image aligned to the right edge inside the card layout.
 - **FR-014**: The page visual direction MUST follow a bold editorial style.
 - **FR-015**: Deployment configuration MUST target GitHub Pages project-site routing.
+- **FR-016**: The navbar MUST remain fully visible and operable without clipping or horizontal overflow on common mobile and desktop viewport widths.
+- **FR-017**: The Contact email CTA MUST remain within its container bounds and viewport width at all supported breakpoints.
 
 ### Key Entities *(include if feature involves data)*
 
@@ -111,6 +113,7 @@ As a visitor, I can browse a list of project cards where each card represents on
 - **SC-005**: Manual smoke verification confirms section navigation and content visibility without automated tests.
 - **SC-006**: Hero primary CTA reaches the Contact section in one interaction from the initial viewport.
 - **SC-007**: 100% of project cards display required fields and right-edge image placement.
+- **SC-008**: At 320px viewport width, navbar and Contact email CTA render without clipping, off-screen overflow, or unreadable text.
 
 ## Assumptions
 
